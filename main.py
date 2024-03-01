@@ -15,6 +15,6 @@ for file in arquivos:
     centro = file[-4:]
     nome_arquivo = f'Dados_{centro}_{data_formatada}_{ano}.txt'
     if centro.find('12') > -1:
-        shutil.copy(f'{caminho_origem}/{file}.txt', f'{caminho_destino}/1200/')
+        shutil.copy(f'{caminho_origem}/{file}.txt', f'{caminho_destino}/1200/{nome_arquivo}')
     else:
-        shutil.copy(f'{caminho_origem}/{file}.txt', f'{caminho_destino}/{centro}/')
+        shutil.copy(f'{caminho_origem}/{file}.txt', f'{caminho_destino}/{centro}/{nome_arquivo}')
