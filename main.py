@@ -14,7 +14,6 @@ arquivos = ['Dados_1200', 'Dados_1201', 'Dados_1206', 'Dados_1208', 'Dados_1220'
 for file in arquivos:
     centro = file[-4:]
     nome_arquivo = f'Dados_{centro}_{data_formatada}_{ano}.txt'
-    print(nome_arquivo)
     if centro.find('12') > -1:
         shutil.copy(f'{caminho_origem}/{file}.txt', f'{caminho_destino}/1200/')
     else:
